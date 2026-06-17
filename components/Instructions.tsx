@@ -2,8 +2,8 @@
 
 import React from 'react';
 
-const ALIAS = 'patocabelier';
-const WHATSAPP = '543446203480'; // Formato: 5491112345678
+const ALIAS = 'domi.gimenez03';
+const WHATSAPP = '5493446587125'; // Formato: 5491112345678
 
 const steps = [
   { num: 1, text: 'Elegí tu número favorito en la grilla de abajo.' },

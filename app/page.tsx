@@ -33,7 +33,7 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-[#081326] text-white">
+    <main className="min-h-screen bg-black text-white">
       {/* Header con stats en vivo */}
       <Header
         libres={libres.length}
@@ -75,7 +75,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="text-center py-6 border-t border-white/5 px-4">
         <p className="text-blue-300/40 text-xs">
-          Rifa Día del Padre &nbsp;|&nbsp;
+          Super Polla &nbsp;|&nbsp;
           <a href="/admin" className="hover:text-blue-300 transition-colors underline decoration-dotted">
             Admin
           </a>
