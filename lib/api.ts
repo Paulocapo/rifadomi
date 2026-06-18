@@ -10,7 +10,7 @@ export async function fetchNumbers(): Promise<RaffleNumber[]> {
   // Normalizar estados vacíos a 'Libre' para evitar que crashee la interfaz
   return json.data.map((n) => ({
     ...n,
-    estado: (n.estado === '' || !n.estado) ? 'Libre' : n.estado,
+    estado: ((n.estado as string) === '' || !n.estado) ? 'Libre' : n.estado,
   }));
 }
 
