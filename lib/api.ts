@@ -7,7 +7,11 @@ export async function fetchNumbers(): Promise<RaffleNumber[]> {
   if (!res.ok) throw new Error('Error al obtener los números');
   const json: ApiResponse<RaffleNumber[]> = await res.json();
   if (!json.success || !json.data) throw new Error(json.error || 'Error desconocido');
-  return json.data;
+  // Normalizar estados vacíos a 'Libre' para evitar que crashee la interfaz
+  return json.data.map((n) => ({
+    ...n,
+    estado: (n.estado === '' || !n.estado) ? 'Libre' : n.estado,
+  }));
 }
 
 export async function reserveNumber(
