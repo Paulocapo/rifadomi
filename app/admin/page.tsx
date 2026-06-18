@@ -36,7 +36,7 @@ export default function AdminPage() {
         <div className="relative z-10 px-4 py-5 max-w-3xl mx-auto flex items-center justify-between">
           <div>
             <span className="text-[#ebd9a8] text-xs font-semibold uppercase tracking-widest">Panel Admin</span>
-            <h1 className="text-white text-xl font-black">Rifa Día del Padre 🧔🏻‍♂️</h1>
+            <h1 className="text-white text-xl font-black">Gran Polla</h1>
           </div>
           <div className="flex items-center gap-3">
             <button

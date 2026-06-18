@@ -103,15 +103,13 @@ function AdminCard({ number, processing, actionLoading, onConfirm, onRelease, sh
   const numStr = String(number.numero).padStart(2, '0');
 
   return (
-    <div className={`flex items-center gap-3 bg-white/3 border rounded-2xl px-4 py-3 transition-all ${
-      showConfirm ? 'border-yellow-500/10' : 'border-red-500/10'
-    }`}>
+    <div className={`flex items-center gap-3 bg-white/3 border rounded-2xl px-4 py-3 transition-all ${showConfirm ? 'border-yellow-500/10' : 'border-red-500/10'
+      }`}>
       {/* Número */}
-      <div className={`flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center font-black text-lg ${
-        showConfirm
+      <div className={`flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center font-black text-lg ${showConfirm
           ? 'bg-yellow-500/20 text-yellow-300 border border-yellow-500/20'
           : 'bg-red-500/20 text-red-300 border border-red-500/20'
-      }`}>
+        }`}>
         {numStr}
       </div>
 
